@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logic Gates Drawer</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+input, button { padding: 10px; font-size: 16px; margin: 5px 0; width: 100%; }
+#diagram { margin-top: 20px; background: white; padding: 10px; border: 1px solid #ccc; }
+.gate { stroke: black; fill: none; }
+</style>
+</head>
+<body>
+<h1>Logic Gates Drawer (4 Variables)</h1>
+<p>Enter Boolean Expression (using any letters, automatically mapped to a,b,c,d):</p>
+<input type="text" id="expr" placeholder="e.g., X.Y + Z'.W">
+<button onclick="drawLogic()">Draw Logic Diagram</button>
+<div id="diagram"></div>
+
+<script src="logicDrawer.js"></script>
+</body>
+</html>
